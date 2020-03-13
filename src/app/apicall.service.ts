@@ -20,7 +20,7 @@ export class ApicallService {
       '1108554cc1mshf11c17c4fea2b3dp179054jsn2446fb7a8965'
       );
     return this.httpClient.get(
-      `https://restcountries-v1.p.rapidapi.com/capital/` + name,
+      `https://restcountries-v1.p.rapidapi.com/name/` + name,
       {headers: headers}
     ).pipe(
         map((data: Country[]) => {
